@@ -1,0 +1,232 @@
+<div align="center">
+
+<br><br><br><br>
+
+**Title of the Project**
+
+**Smart Garage Hub - The Modern Garage Operations Platform**
+
+<br><br><br>
+
+**Submitted By:**
+
+**[Your Name]**
+
+<br><br><br>
+
+**Name of the Guide:**
+
+**[Guide Name]**
+
+<br><br><br><br><br><br><br><br>
+
+</div>
+
+---
+
+# Introduction
+
+**1.1 Introduction of the System:**
+The automotive repair industry is an established sector engaged in the maintenance, repair, and servicing of vehicles. It involves a variety of activities including scheduling appointments, tracking inventory like spare parts and oils, and managing customer communications. With the rise in customer demand and the volume of daily repairs, managing these activities efficiently has become a complex task. Manual tasks, such as using paper ledgers and phone calls, are generally not efficient, accurate, or timely in completing the process.
+
+Web and mobile applications are playing an extremely powerful role in today's business world to enhance customer engagement and productivity. Customers expect a faster service process, like instant booking and real-time repair tracking. Thus, an ability to provide automation, communication, and transparency at all levels of operation is crucial.
+
+The system “Smart Garage Hub” is a comprehensive digital platform created to offer garage administrators, mechanics, and customers a unified platform. The system is made up of appointment management, real-time inventory tracking, and instant notifications, which helps in coordinating the staff and customers effectively. The system also brings about a rise in productivity, decreases operating delay, and enhances the quality of service.
+
+**1.1.1 Project Title:**
+Smart Garage Hub - The Modern Garage Operations Platform
+
+**1.1.2 Category:**
+The integration of Enterprise Resource Planning (ERP) with Customer Relationship Management (CRM) for automotive services.
+
+**1.1.3 Overview:**
+The Smart Garage Hub is the new digital platform to assist traditional mechanical workshops in becoming more modern. The system will enable garage activities with a high volume of appointments, inventory management in real-time, and live customer updates.
+
+**1.2 Background:**
+To help in the smooth operation of daily garage tasks, the program makes use of centralized databases and real-time web sockets. By providing this option online, Smart Garage Hub makes it possible for mechanics to keep an eye on their daily tasks and promptly update customers on their vehicle's status. The site has an integrated inventory module in addition to its scheduling features, allowing administrators to easily track, choose, and restock automotive parts, tires, and other repair-related items.
+
+**1.3 The objectives of the system are:**
+* **Efficient Scheduling:** To provide a dependable booking system for customers and administrators to manage daily workloads and prevent overbooking.
+* **Real-Time Inventory Processing:** To provide accurate tracking of spare parts. Whenever a part is used by a mechanic, the system automatically deducts it from the database.
+* **User-Friendly Interface:** Develop React-based web interfaces for effective interaction, which include service selections, digital billing, and tracking of the repair order.
+* **Scalable Data Management:** To store the user, product, and appointment data, use MongoDB, which enables efficient retrieval and future scalability.
+* **Cost-Effective Solution:** By making an inexpensive management tool available on standard web browsers, one can lessen the dependency on pricey, outdated desktop software.
+* **Real-Time Notifications:** Use automated alerts to expedite communication and facilitate prompt updates to customers regarding their vehicle status.
+
+**1.4 The scope of the system:**
+* **Appointment Booking:** Automated evaluation of available time slots and mechanics to schedule customer drop-offs.
+* **Operational Integration:** Modules with role-based management for mechanics, inventory items, and digital billing that process totals accurately.
+* **User Management:** Secure features for administrators, staff, and users to register, log in, and update their passwords.
+* **Scalability:** Support for integration with potential growth, to handle multiple garage branches in the future.
+* **Accessibility:** A web-based platform that works on all devices (mobile, tablet, desktop) and is appropriate for both urban and rural environments with internet access.
+
+**1.5 Structure of the System:**
+
+**Admin:**
+* Leads the product and service management across the garage.
+* Ensures stock and inventory are controlled so that it manages well.
+* Tracks the service and repair processes.
+* Takes on the responsibility for staff management and the overall operation of the system.
+
+**User/Customer:**
+* Uses the platform by viewing the various varieties of services offered.
+* Places booking requests for vehicle repairs.
+* Receives order status updates in real-time.
+* Helps provide various types of feedback upon completion.
+
+**Staff / Mechanic:**
+* Uses the platform to see assigned orders and tasks for the day.
+* Indicates the repair status of the customer's vehicle (e.g., In Progress, Completed).
+* Manages inventory by logging the parts used during a repair operation.
+
+**1.6 Hardware/ Software requirements used for the development:**
+
+**Hardware Requirements:**
+* Memory: 4GB or more
+* RAM: Minimum 8 GB 
+* Storage: 10GB or more free space
+* Device: Any modern smartphone, tablet, or desktop computer.
+
+**Software Requirements:**
+* Frontend Framework: React.js with Vite
+* Backend Programming: Node.js, Express.js
+* Database: MongoDB (NoSQL)
+* Operating System: macOS / Linux / Windows
+* Libraries: Socket.IO (for real-time synchronization), Chart.js (for analytics).
+* Network: Must have a high-speed Internet connection for WebSocket synchronization.
+
+---
+
+# Software Requirements Specification
+
+**2.1 Introduction:**
+The Smart Garage Hub is a digital solution built for today's automotive repair shops with advanced technology and real-time connectivity. It's a live ecosystem that brings customers, mechanics, and administrators together via the web. There's the primary goal of providing visibility of the vehicle repair process and in addition, the effectiveness of the workspace.
+
+The system uses WebSockets. It will ensure the order updates and inventory changes are synchronized properly between all the connected devices for real-time communication. The architecture of the system is modular, and the monitoring is centralized in one admin dashboard. The user experience is also improved with the application, due to the presence of modern UI components, smooth animations, and responsive design. 
+
+The basic aim of the software is to assist the customers who can get live information about their vehicles and also help the organization to improve its internal workflow management. It has replaced the conventional system with the digital system, thus it is fast, reliable, and convenient to operate the garage's daily production.
+
+**2.2 Objectives of the System:**
+* **Digitalize Appointments:** Create a web app that will integrate a manual booking process with a digital scheduling system for retail customers.
+* **Manage Products, Inventories & Staff:** Have all the product, inventory, and staff information organized on a single dashboard.
+* **Automate Status Updates:** Integrate with real-time sockets to send live updates directly to the customer's screen.
+* **Enable Multi-Channel Communication:** Configure live communication channels between admin, retail customers, and employees for order assignment and announcements.
+
+**2.3 Overall Description:**
+
+**2.3.1 Product Perspective:**
+This system is an end-to-end management system that communicates with web browsers across any device. It is particularly created to supplant manual information entry systems with automated, real-time systems.
+
+The application's architecture is a backend with Node.js and data is stored, synchronized, and communicates efficiently with the help of MongoDB. The aim of the system is to eliminate manual data entry and manual monitoring by replacing it with an automated real-time digital system which reduces human error and increases accuracy.
+
+**2.3.2 Product Functions:**
+* **Interactive Dashboard:** Displays business analytics in a visually appealing manner with charts and graphs for the administrator.
+* **Live Status Tracking:** Allows the customer to see exactly what stage of repair their vehicle is currently in.
+* **Digital Billing:** Automatically calculates the total cost of service, including parts used and labor, and generates a final invoice.
+* **Staff Assignment:** Send orders to mechanics when a booking is approved. The Mechanic's name and repair time will automatically be added to the database.
+
+**2.3.3 User Characteristics:**
+* **Customers:** It provides a beautiful web application where they can discover services, book appointments, and track their vehicle in real-time.
+* **Field staff/Mechanics:** They receive a simplified interface to log in each morning. They are informed about the orders' details like the vehicle make, issue, and required parts. Staff can access and update service lists and mark orders as done.
+* **Administrators:** They have control over everything via a web-based dashboard and can add/edit products, update inventory stock, and manage staff.
+
+**2.3.4 General Constraints:**
+* **Connectivity:** This application requires an uninterrupted Internet connection for real-time Socket.IO updates.
+* **Platform:** The app is created as a web application, which means it is accessible via any modern browser (Chrome, Safari, Edge) without requiring app store downloads.
+
+**2.3.5 Assumptions:**
+* On the back end, the entire system relies on a constant connection to a MongoDB database. It stores all orders, user information, and logs.
+
+**2.4 Special Requirements:**
+* **Modern UI:** The look and feel of the app must be modern and show-stopping, utilizing Tailwind CSS for a polished interface.
+* **Access to data:** Staff profiles and business financials can only be accessed by administrators and are tightly controlled via the backend API.
+
+**2.5 Functional Requirements:**
+* **Authentication:** Authentication works with role-based access control (RBAC), so there are three main roles: admin, user (customer), and staff (mechanic).
+* **Order Management:** Whenever an admin assigns a mechanic to a pending order, the backend sends out a real-time event.
+* **Digital Bill:** The digital billing system figures out the total at checkout based on how many inventory items were used and the base service fee.
+
+**2.6 Design Constraints:**
+* **Framework Guidelines:** All UI pieces follow modern web design guidelines with rounded corners and soft shadows. 
+* **Performance:** The application is built to stay fast and responsive, ensuring that data lists and dashboards load without lag.
+
+**2.7 System Attributes:**
+* **Reliability:** The Node.js server and Socket.IO channels try to maintain maximum uptime to assure that communication is continuous.
+* **Scalability:** The backend uses an event-driven, non-blocking asynchronous architecture, allowing it to manage hundreds of simultaneous connections.
+* **Usability:** This app is designed in a way that it would seem obvious even if you’ve never used it before, requiring no training for mechanics or customers.
+
+**2.8 Other Requirements:**
+* **Role-Specific Filtering:** Admins have access to only what they need to see. They can easily sort staff and sales by categories.
+
+---
+
+# System Design
+
+**3.1 Introduction:**
+In the modern environment, traditional service channels need to adapt to digital platforms. This system provides a one-platform software package for garages to help them digitize, work with digital inventory, and automate customer tracking.
+
+The project includes:
+* **Express API Server (Backend):** Async Node.js Express server. Manages requests on the database, authentication, and real-time coordination using Socket.io.
+* **Web Administration Portal:** Linked to the shared database for inventory editing, employee information management, and real-time delivery tracking.
+* **Customer Web Client:** React-based web client displaying services, booking forms, and live status updates.
+
+For this multi-faceted business model, the system is designed to be scalable, with real-time sync and high user interaction. With this architecture, the single source stores up-to-the-minute information for all users.
+
+**3.2 Assumptions and Constraints:**
+During the process of design and development of the system, assumptions were identified. The primary database assumption is that the instance of the database is running via MongoDB. In production, the app will be integrated easily with a cluster of MongoDB databases managed in the cloud via MongoDB Atlas. 
+
+---
+
+# Database Design
+
+**4.1 Introduction:**
+The database part of the system is designed to enable the coordination of these three main groups of users: customers, staff, and administrators.
+
+**Storage Engine Selection:**
+The system is using MongoDB as the main storage engine. It is a high-performance NoSQL database that is document-oriented.
+* **Dynamic Schema Flexibility:** It can accommodate a number of different user types and inventory items without the need for costly schema changes.
+* **Mongoose ODM Integration:** Schema definitions are managed by the Mongoose Object Data Modeling library, enforcing validation at the application layer.
+
+**4.2 Purpose and Scope:**
+* **Purpose:** The purpose of this database design is to define the logical structures, collection relationships, and validation constraints that ensure data consistency.
+* **Scope:** The collections active in the application include:
+  * **Users:** Customer, Administrator, and Staff identities.
+  * **Inventory:** Catalog with pricing and stock information.
+  * **Services/Appointments:** Transactions, required parts, and repair states.
+
+---
+
+# Detailed Design
+
+**5.1 Introduction:**
+This Detailed Design Document is intended to describe the low-level architecture, programmatic procedural sequences, and execution strategies for the Smart Garage Hub. It maps the big picture system components to implementation-level definitions, giving a blueprint for the developers involved in front-end and back-end development.
+
+The software system is split into major functional modules that work within the service-oriented model. In a safe and efficient way, these modules manage state changes, database storage, and rooms for WebSocket connections. The system integrates traditional artisan mechanics processes with modern engineering principles, seamlessly mapping them to digitized workflows.
+
+---
+
+# Testing
+
+**6.1 Introduction:**
+Testing software is an important process in the SDLC to deliver a stable, secure, and quality software suite to customers. The Smart Garage Hub is rigorously tested for QA to guarantee efficiency. To provide quality control, the system is tested in three levels: Unit Testing, Integration Testing, and System Testing.
+
+* **Unit Testing:** Assesses each individual feature, user interface, and page-level controls independently.
+* **Integration Testing:** Ensures the functional interfaces, dashboards, and connection routers are working correctly, and that there is no problem between the frontend views and REST controllers.
+* **System Testing:** Performed with the complete software package in which the various operations, security bounds, and database channels are evaluated together.
+
+---
+
+# Conclusion and Future Scope
+
+**7.1 Conclusion:**
+The Smart Garage Hub is a modernization of traditional garage operations to a high-performance, digital-first enterprise. The combination of an Express.js REST API, a powerful backend administration panel, and a sleek customer web app brings a new era of automotive technology. 
+
+The system acts as a proof of the use of real-time telemetry (WebSockets) in the integration process. It is much more than just a booking website; it is one continuous enterprise resource planning (ERP) solution designed to streamline the customer-facing sales process and the mechanic workflow.
+
+**7.2 Limitations:**
+* **Local Hosting & Environment Configurations:** Transitioning from local development to production deployment comes with challenges, such as setting up secure domain names and SSL/TLS certificates.
+* **Payment Gateways:** The checkout pipeline runs perfectly, but further integration with real-world payment gateways (like Stripe) is required for processing credit cards online.
+
+**7.3 Future Scope:**
+* **Expanded Analytics:** Managers will eventually have access to predictive demand forecasting, indicating which spare parts will be needed based on historical trends.
+* **IoT OBD-II Integration:** The physical IoT sensors could be embedded via Bluetooth OBD-II scanners to automatically read vehicle diagnostic codes directly into the mechanic's dashboard, ensuring optimum repair accuracy.

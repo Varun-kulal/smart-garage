@@ -1,0 +1,3 @@
+@echo off
+echo Starting MongoDB using local mongodb_data folder...
+mongod --dbpath="%~dp0mongodb_data"
